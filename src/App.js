@@ -142,6 +142,7 @@ class App extends React.Component {
                 cvv={data.Payment.CVV}
                 pan={data.Payment.PAN}
                 exp={data.Payment.Exp}
+                submissionDate={data.Payee.SubmissionDate}
               >
                 {/* mapping through the array of invoices */}
                 {/* passing it to PayeeInfo component as a child */}

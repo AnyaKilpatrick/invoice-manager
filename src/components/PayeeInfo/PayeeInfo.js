@@ -57,6 +57,11 @@ const styles = theme => ({
   typography: {
     fontFamily:"'Montserrat', sans-serif"
   },
+  submissionDate: {
+    fontFamily:"'Montserrat', sans-serif",
+    color:"rgba(145, 136, 136, 0.87)",
+    marginTop:10
+  },
   typography2: {
     fontFamily:"'Montserrat', sans-serif",
     marginTop:10
@@ -192,6 +197,11 @@ class PayeeInfo extends React.Component {
                     <Typography className={classes.typography2}>Fax: {this.props.fax}</Typography>
                     <Typography className={classes.typography}>Phone: {this.props.phone}</Typography>
                 </Grid>
+                <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                  <Typography className={classes.submissionDate}>
+                    Submission Date: {this.props.submissionDate}
+                  </Typography>
+              </Grid>
               </Grid>
             </ExpansionPanelDetails>
 
