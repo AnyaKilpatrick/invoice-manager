@@ -17,10 +17,17 @@ const styles = theme => ({
         '&$cssFocused': {
             color: "#86518e",
             fontFamily:"'Montserrat', sans-serif"
-        }
+        },
+        [theme.breakpoints.down('sm')]: {
+            marginLeft:10
+        },
     },
     input: {
-        width:250
+        width:250,
+        [theme.breakpoints.down('sm')]: {
+            marginLeft:15,
+            width:220
+        },
     },
     cssFocused: {},
     cssUnderline: {

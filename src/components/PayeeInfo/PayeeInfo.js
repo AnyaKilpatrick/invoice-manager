@@ -70,7 +70,10 @@ const styles = theme => ({
   addressDetail:{
     fontFamily:"'Montserrat', sans-serif",
     position:"relative",
-    left:25
+    left:25,
+    [theme.breakpoints.down('sm')]: {
+      left:15
+    },
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
